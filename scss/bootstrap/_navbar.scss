@@ -16,7 +16,7 @@
   --#{$prefix}navbar-brand-font-size: #{$navbar-brand-font-size};
   --#{$prefix}navbar-brand-color: #{$navbar-light-brand-color};
   --#{$prefix}navbar-brand-hover-color: #{$navbar-light-brand-hover-color};
-  --#{$prefix}navbar-nav-link-padding-x: #{$navbar-nav-link-padding-x};
+  --#{$prefix}navbar-nav-link-padding-x: 0;
   --#{$prefix}navbar-toggler-padding-y: #{$navbar-toggler-padding-y};
   --#{$prefix}navbar-toggler-padding-x: #{$navbar-toggler-padding-x};
   --#{$prefix}navbar-toggler-font-size: #{$navbar-toggler-font-size};
@@ -86,11 +86,11 @@
 .navbar-nav {
   // scss-docs-start navbar-nav-css-vars
   --#{$prefix}nav-link-padding-x: 0;
-  --#{$prefix}nav-link-padding-y: #{$nav-link-padding-y};
+  --#{$prefix}nav-link-padding-y: 0;
   @include rfs($nav-link-font-size, --#{$prefix}nav-link-font-size);
   --#{$prefix}nav-link-font-weight: #{$nav-link-font-weight};
   --#{$prefix}nav-link-color: var(--#{$prefix}navbar-color);
-  --#{$prefix}nav-link-hover-color: var(--#{$prefix}navbar-hover-color);
+  --#{$prefix}nav-link-hover-color: #8DA291;
   --#{$prefix}nav-link-disabled-color: var(--#{$prefix}navbar-disabled-color);
   // scss-docs-end navbar-nav-css-vars
 
