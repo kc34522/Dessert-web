@@ -12145,9 +12145,13 @@ table {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 body {
@@ -12197,12 +12201,12 @@ body {
   margin-left: 79px;
 }
 
-.home_section_one {
+.section_one_banner {
   margin-top: 30px;
   margin-left: 42px;
   margin-right: 42px;
   height: 496px;
 }
-.home_section_one img {
+.section_one_banner img {
   height: 496px;
 }/*# sourceMappingURL=all.css.map */

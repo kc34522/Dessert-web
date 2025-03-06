@@ -3,10 +3,12 @@
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-}
+    object-fit: cover;
+    object-position: center;
+} 
 
 body{
     padding-top: 30px;
@@ -55,7 +57,7 @@ body{
     margin-left: 79px;
 }
 
-.home_section_one{
+.section_one_banner{
     margin-top: 30px;
     margin-left: 42px;
     margin-right: 42px;
