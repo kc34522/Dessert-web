@@ -19,7 +19,7 @@
                 <picture>
                     <source srcset="./image/logo-all-dark.png" media="(min-width:768px)" width="219">
                     <img src="./image/logotype-sm-dark.png" width="114">
-                  </picture>
+                </picture>
             </a>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav">
@@ -33,20 +33,54 @@
                         <a class="nav-link" href="#">登入</a>
                     </li>
                 </ul>
-                <div class="shopping_cart d-none d-md-block">
+                <!-- <div class="shopping_cart d-none d-md-block">
                     <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
                         alt="shopping cart"></a>
-                </div>
+                </div> -->
             </div>
             <div class="d-md-none">
-                <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
-                    alt="shopping cart"></a>
+                <a href="#"><img
+                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
+                        alt="shopping cart"></a>
             </div>
         </div>
+        <div class="shopping_cart d-none d-md-block">
+            <a href="#"><img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
+                    alt="shopping cart"></a>
+        </div>
     </nav>
-    <div class="section_one_banner">
-        <img class="object-fit-cover h-100" src="https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=2725&q=80" alt="">
-    </div>
+    <section class="section_one">
+        <div class="banner_image">
+            <img class="object-fit-cover h-100 "
+                src="https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=2725&q=80"
+                alt="">
+
+            <div class="row g-0">
+                <ul class="three_subject px-0 d-flex my-0 mx-auto col-md-10">
+                    <li class="subject1 col-4 col-md">
+                        <a class="d-block w-100" href="#">
+                            <p>本日精選</p>
+                            <div class="bg-primary"></div>
+                        </a>
+                    </li>
+                    <li class="subject2 col-4 col-md">
+                        <a class="d-block w-100" href="#">
+                            <p>人氣推薦</p>
+                            <div></div>
+                        </a>
+                    </li>
+                    <li class="subject3 col-4 col-md">
+                        <a class="d-block w-100" href="#">
+                            <p>新品上市</p>  
+                            <div></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
