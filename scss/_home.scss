@@ -122,7 +122,8 @@ body {
     }
 }
 
-.section_two{
+.section_two, .section_three{
+    gap: 30px;
     margin-top: 180px;
     @media (min-width: 768px){
         margin-top: 247px;
@@ -161,15 +162,21 @@ body {
     }
     p{
         line-height: 32px;
-        padding: 30px;
         background: #EAF0ED;
+        padding: 30px;
 
         @media (min-width: 768px){
             writing-mode: vertical-rl;
-        line-height: 28px;
-        padding: 0 30px;
+            line-height: 28px;
         }
     }
    
 }
 
+.section_three{
+    margin-top: 0px;
+    @media (min-width: 768px){
+        margin-top: 108px;
+    }
+    
+}

@@ -13130,61 +13130,70 @@ body {
   color: #FFFFFF;
 }
 
-.section_two {
+.section_two, .section_three {
+  gap: 30px;
   margin-top: 180px;
   height: 420px;
   background: #FFFFFF;
   padding: 0;
 }
 @media (min-width: 768px) {
-  .section_two {
+  .section_two, .section_three {
     margin-top: 247px;
   }
 }
 @media (min-width: 768px) {
-  .section_two {
+  .section_two, .section_three {
     background: #EAF0ED;
   }
 }
 @media (min-width: 768px) {
-  .section_two {
+  .section_two, .section_three {
     padding: 70px 42px;
   }
 }
-.section_two .slogan {
+.section_two .slogan, .section_three .slogan {
   margin: 210px 0 30px 0;
   width: 196px;
   height: 60px;
 }
 @media (min-width: 768px) {
-  .section_two .slogan {
+  .section_two .slogan, .section_three .slogan {
     width: 89px;
     height: 460px;
     margin: 0;
   }
 }
-.section_two .picture {
+.section_two .picture, .section_three .picture {
   height: 250px;
 }
 @media (min-width: 768px) {
-  .section_two .picture {
+  .section_two .picture, .section_three .picture {
     width: 460px;
     height: 460px;
   }
 }
-.section_two .picture img {
+.section_two .picture img, .section_three .picture img {
   -o-object-position: center;
      object-position: center;
 }
-.section_two p {
+.section_two p, .section_three p {
   line-height: 32px;
-  padding: 30px;
   background: #EAF0ED;
+  padding: 30px;
 }
 @media (min-width: 768px) {
-  .section_two p {
+  .section_two p, .section_three p {
     writing-mode: vertical-rl;
     line-height: 28px;
-    padding: 0 30px;
+  }
+}
+
+.section_three {
+  margin-top: 0px;
+}
+@media (min-width: 768px) {
+  .section_three {
+    margin-top: 108px;
   }
 }/*# sourceMappingURL=all.css.map */
