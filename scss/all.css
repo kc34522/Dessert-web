@@ -13083,11 +13083,11 @@ body {
     height: 496px;
   }
 }
-.section_one .banner_image div {
+.section_one .row {
   margin-top: 0;
 }
 @media (min-width: 768px) {
-  .section_one .banner_image div {
+  .section_one .row {
     margin-top: -89px;
   }
 }
@@ -13130,70 +13130,109 @@ body {
   color: #FFFFFF;
 }
 
-.section_two, .section_three {
+.section_two,
+.section_three {
+  position: relative;
+  /* 讓偽元素能夠相對於 section_two 定位 */
   gap: 30px;
-  margin-top: 180px;
-  height: 420px;
+  margin-top: 0;
   background: #FFFFFF;
   padding: 0;
 }
 @media (min-width: 768px) {
-  .section_two, .section_three {
-    margin-top: 247px;
+  .section_two,
+  .section_three {
+    margin-top: 60px;
   }
 }
 @media (min-width: 768px) {
-  .section_two, .section_three {
+  .section_two,
+  .section_three {
     background: #EAF0ED;
   }
-}
-@media (min-width: 768px) {
-  .section_two, .section_three {
-    padding: 70px 42px;
+  .section_two::before,
+  .section_three::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    /* 控制白色區塊的高度 */
+    left: 0;
+    width: 100%;
+    height: 20px;
+    /* 調整這個數值來控制白色部分的大小 */
+    background: #FFFFFF;
+    z-index: 1;
+    /* 確保背景顯示在底層 */
+  }
+  .section_two::after,
+  .section_three::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    /* 控制白色區塊的高度 */
+    left: 0;
+    width: 100%;
+    height: 20px;
+    /* 調整這個數值來控制白色部分的大小 */
+    background: #FFFFFF;
+    z-index: 1;
+    /* 確保背景顯示在底層 */
   }
 }
-.section_two .slogan, .section_three .slogan {
-  margin: 210px 0 30px 0;
-  width: 196px;
-  height: 60px;
+@media (min-width: 768px) {
+  .section_two,
+  .section_three {
+    padding: 0 42px;
+  }
+}
+.section_two .slogan,
+.section_three .slogan {
+  margin: 30px 0;
+  max-width: 196px;
 }
 @media (min-width: 768px) {
-  .section_two .slogan, .section_three .slogan {
-    width: 89px;
+  .section_two .slogan,
+  .section_three .slogan {
     height: 460px;
     margin: 0;
+    z-index: 5;
   }
 }
-.section_two .picture, .section_three .picture {
-  height: 250px;
-}
-@media (min-width: 768px) {
-  .section_two .picture, .section_three .picture {
-    width: 460px;
-    height: 460px;
-  }
-}
-.section_two .picture img, .section_three .picture img {
+.section_two .slogan img,
+.section_three .slogan img {
   -o-object-position: center;
      object-position: center;
 }
-.section_two p, .section_three p {
+.section_two .picture,
+.section_three .picture {
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .section_two .picture,
+  .section_three .picture {
+    width: 460px;
+    height: 460px;
+    z-index: 5;
+  }
+}
+.section_two .picture img,
+.section_three .picture img {
+  -o-object-position: center;
+     object-position: center;
+}
+.section_two p,
+.section_three p {
   line-height: 32px;
   background: #EAF0ED;
   padding: 30px;
 }
 @media (min-width: 768px) {
-  .section_two p, .section_three p {
+  .section_two p,
+  .section_three p {
     writing-mode: vertical-rl;
     line-height: 28px;
-  }
-}
-
-.section_three {
-  margin-top: 0px;
-}
-@media (min-width: 768px) {
-  .section_three {
-    margin-top: 108px;
+    height: 280px;
+    padding: 0;
+    margin: 70px 0;
   }
 }/*# sourceMappingURL=all.css.map */
