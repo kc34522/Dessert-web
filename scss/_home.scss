@@ -95,7 +95,7 @@ body {
         }
 
 
-        .subject1 {
+        .subject1{
             background-image: url(https://images.unsplash.com/photo-1490914327627-9fe8d52f4d90?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=73ed228f25bdefd2291c242f6d390fca&auto=format&fit=crop&w=600&q=60);
             background-position: center;
             background-size: cover;
@@ -119,11 +119,27 @@ body {
         a {
             writing-mode: vertical-rl;
             align-content: center;
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 20px;
+            line-height: 24px;
             height: 100%;
+            background: #3F5D45;
+            opacity: 0.8;
             text-align: center;
             color: #FFFFFF;
+            @media (min-width: 768px) {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            &:hover{
+                color: #3F5D45;
+                background: #FFE180;
+                opacity: 0.8;
+            }
+            
+            p {
+                z-index: 3;
+            }
         }
 
     }
@@ -246,14 +262,19 @@ body {
 }
 
 .section_products{
-    margin-bottom: 60px;
+    margin-bottom: 30px;
+    padding: 0 30px;
+    @media (min-width: 768px) {
+        padding: 0 42px;
+        margin-bottom: 60px;
+    }
     .three_product{
-        margin: 0 32px;
+        @media (min-width: 768px) {
+            gap: 20px;
+        }
+    
         li > div > div:first-of-type{
             height: 315px;
-            // display: flex;
-            // align-items: center;
-            // justify-content: center;
         }
         .product_center{
             
@@ -268,7 +289,7 @@ body {
         }
         span{
             writing-mode: vertical-rl;
-            padding: 10px;
+            padding: 12px 8px;
             left: 20px;
             line-height: 20px;
         }
@@ -281,7 +302,10 @@ body {
 }
 
 .email{
-    padding: 0 42px;
+    padding: 30px 30px 0 30px;
+    @media (min-width: 768px) {
+        padding: 0 42px;
+    }
     .left{
         gap: 20px;
         p{
@@ -306,14 +330,24 @@ body {
 }
 
 footer {
-    padding: 30px 42px;
+    padding: 30px;
+    @media (min-width: 768px) {
+        padding: 30px 42px;
+    }
     .footer_left{
-        height: 210px;
-        margin-bottom: 30px;
+        height: 134px;
+        margin-bottom: 37px;
+        @media (min-width: 768px) {
+            height: 210px;
+            margin-bottom: 30px;
+        }
     }
     .footer_logo{
         width: 171px;
         margin-top: 8.9px;
+    }
+    .copy_right{
+        margin-top: 23px;
     }
 }
 
