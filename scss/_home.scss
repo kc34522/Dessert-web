@@ -291,6 +291,17 @@ body {
     .email_input{
         height: 56px;
         margin: 30px 0;
+        input{
+            padding-left: 64px;
+        }
+    }
+    .email_image{
+        top:16px;
+        left: 20px;
+    }
+    button{
+        background-color: #FFE180;
+        padding: 0 22px;
     }
 }
 
