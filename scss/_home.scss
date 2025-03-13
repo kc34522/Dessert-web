@@ -232,3 +232,77 @@ body {
     }
 
 }
+
+.slogan4 {
+    margin: 30px 0;
+    max-width: 196px;
+
+    // height: 60px;
+    @media (min-width: 768px) {
+        width: 89px;
+        margin: 80px 0;
+    }
+
+}
+
+.section_products{
+    margin-bottom: 60px;
+    .three_product{
+        margin: 0 32px;
+        li > div > div:first-of-type{
+            height: 315px;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+        }
+        .product_center{
+            
+            .name{
+                width: 58%;
+                padding: 14px 0;
+            }
+            .price{
+                width: 42%;
+                padding: 14px 0;
+            }
+        }
+        span{
+            writing-mode: vertical-rl;
+            padding: 10px;
+            left: 20px;
+            line-height: 20px;
+        }
+        .like_button{
+            top: 20px;
+            right: 20px;
+        }
+        
+    }
+}
+
+.email{
+    padding: 0 42px;
+    .left{
+        gap: 20px;
+        p{
+            font-size: 24px;
+        }
+    }
+    .email_input{
+        height: 56px;
+        margin: 30px 0;
+    }
+}
+
+footer {
+    padding: 30px 42px;
+    .footer_left{
+        height: 210px;
+        margin-bottom: 30px;
+    }
+    .footer_logo{
+        width: 171px;
+        margin-top: 8.9px;
+    }
+}
+
