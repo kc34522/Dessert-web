@@ -13682,6 +13682,11 @@ footer .copy_right {
     padding-top: 0;
   }
 }
+.cart li button {
+  border: 0;
+  padding: 0;
+  background: #FFFFFF;
+}
 .cart li .delete_logo {
   width: 24px;
   height: 24px;
