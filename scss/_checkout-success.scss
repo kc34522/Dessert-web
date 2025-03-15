@@ -1,0 +1,42 @@
+.checkout_success{
+
+    margin: 30px 0 0;
+    background-image: url(https://bit.ly/2P7GhNd);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 460px;
+    padding-top: 0;
+
+    @media (min-width: 768px) {
+        margin: 30px 42px 60px 42px;
+        padding-top: 130px;
+
+
+
+
+    }
+
+    .success_image{
+        width: 189px;
+        margin-top: 32px;
+     
+    }
+
+  
+
+}
+
+
+.keep_shopping{
+    padding: 17px 0 15px 0;
+    background: #FFE180;
+    font-size: 24px;
+    line-height: 33px;
+    height: 65px;
+   
+    @media (min-width: 768px) {
+        margin-top: 50px;    
+    }
+
+}
