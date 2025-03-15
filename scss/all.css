@@ -13783,7 +13783,12 @@ footer .copy_right {
   }
 }
 .checkout .left_top {
-  padding: 30px 40px;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .checkout .left_top {
+    padding: 30px 40px;
+  }
 }
 .checkout .left_top label {
   font-size: 20px;
@@ -14033,6 +14038,8 @@ footer .copy_right {
 }
 .receipt .left_top .choose > a {
   padding: 14px 0;
+  font-size: 20px;
+  line-height: 28px;
 }
 .receipt input {
   height: 56px;
