@@ -10,7 +10,13 @@
 
     }
     .left_top{
-        padding: 30px 40px;
+        padding: 30px;
+        @media (min-width: 768px) {
+            padding: 30px 40px;
+
+    
+    
+        }
         label{
             font-size: 20px;
             line-height: 28px;

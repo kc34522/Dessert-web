@@ -13888,7 +13888,12 @@ footer .copy_right {
   }
 }
 .payment .left_top {
-  padding: 30px 40px;
+  padding: 30px;
+}
+@media (min-width: 768px) {
+  .payment .left_top {
+    padding: 30px 40px;
+  }
 }
 .payment .left_top label {
   font-size: 20px;
