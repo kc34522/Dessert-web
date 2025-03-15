@@ -1,0 +1,128 @@
+.checkout{
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    @media (min-width: 768px) {
+        margin-top: 60px;
+        margin-bottom: 65px;
+        padding: 0 42px;
+
+
+    }
+    .left_top{
+        padding: 30px 40px;
+        label{
+            font-size: 20px;
+            line-height: 28px;
+            margin-bottom: 8px;
+            margin-top: 16px;
+        }
+
+
+        .delivery{
+            font-size: 36px;
+            line-height: 50px;
+            margin-bottom: 14px;
+            margin-top: 0;
+        }
+    }
+ 
+
+
+
+    input{
+        height: 56px;
+        padding-left: 20px;
+        background: #EAF0ED;
+        border: none;
+    }
+    ::placeholder{
+        color: #8DA291
+    }
+
+    select{
+        height: 56px;
+        padding-left:19px;
+    }
+
+    .left_bottom{
+        font-size: 24px;
+        line-height: 33px;
+        padding-top: 19px;
+        padding-bottom: 13px;
+        background: #FFE180;
+    }
+
+    .order>p, .list>p{
+        padding: 16px 0;
+        // margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 33px;
+
+    }
+
+    .subtotal{
+        line-height: 22px;
+    }
+
+    .delivery_fee{
+        margin: 8px 0 16px 0;
+    }
+
+    .total{
+        font-size: 20px;
+        line-height: 28px;
+    }
+   
+    .list{
+        ul{
+            gap:16px;
+        }
+        li{
+            // margin-bottom: 16px;
+        }
+        p{
+            color: #8DA291;
+        }
+        
+        
+    }
+
+    .cart_product_img{
+        width: 120px;
+        height: 80px;
+        margin-right: 20px;
+       
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .checkout_left{
+        width: 100%;
+        @media (min-width: 768px) {
+            width: 58.974%;
+
+        }
+    }
+    .checkout_right{
+        width: 38.461%;
+        .order_subject{
+            padding: 16px 20px;
+            margin-bottom: 20px;
+        }
+        .list_subject{
+            padding: 16px 20px;
+            .name{
+                line-height: 22px;
+            }
+            .price{
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+    }
+
+
+}

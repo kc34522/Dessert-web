@@ -13769,4 +13769,109 @@ footer .copy_right {
   line-height: 33px;
   background-color: #FFE180;
   padding: 16px 0;
+}
+
+.checkout {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .checkout {
+    margin-top: 60px;
+    margin-bottom: 65px;
+    padding: 0 42px;
+  }
+}
+.checkout .left_top {
+  padding: 30px 40px;
+}
+.checkout .left_top label {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+.checkout .left_top .delivery {
+  font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+.checkout input {
+  height: 56px;
+  padding-left: 20px;
+  background: #EAF0ED;
+  border: none;
+}
+.checkout ::-moz-placeholder {
+  color: #8DA291;
+}
+.checkout ::placeholder {
+  color: #8DA291;
+}
+.checkout select {
+  height: 56px;
+  padding-left: 19px;
+}
+.checkout .left_bottom {
+  font-size: 24px;
+  line-height: 33px;
+  padding-top: 19px;
+  padding-bottom: 13px;
+  background: #FFE180;
+}
+.checkout .order > p, .checkout .list > p {
+  padding: 16px 0;
+  font-size: 24px;
+  line-height: 33px;
+}
+.checkout .subtotal {
+  line-height: 22px;
+}
+.checkout .delivery_fee {
+  margin: 8px 0 16px 0;
+}
+.checkout .total {
+  font-size: 20px;
+  line-height: 28px;
+}
+.checkout .list ul {
+  gap: 16px;
+}
+.checkout .list p {
+  color: #8DA291;
+}
+.checkout .cart_product_img {
+  width: 120px;
+  height: 80px;
+  margin-right: 20px;
+}
+.checkout .cart_product_img img {
+  width: 100%;
+  height: 100%;
+}
+.checkout .checkout_left {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .checkout .checkout_left {
+    width: 58.974%;
+  }
+}
+.checkout .checkout_right {
+  width: 38.461%;
+}
+.checkout .checkout_right .order_subject {
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+.checkout .checkout_right .list_subject {
+  padding: 16px 20px;
+}
+.checkout .checkout_right .list_subject .name {
+  line-height: 22px;
+}
+.checkout .checkout_right .list_subject .price {
+  font-size: 20px;
+  line-height: 28px;
 }/*# sourceMappingURL=all.css.map */
