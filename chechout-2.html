@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/all.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <picture>
+                    <source srcset="./image/logo-all-dark.png" media="(min-width:768px)" width="219">
+                    <img src="./image/logotype-sm-dark.png" width="114">
+                </picture>
+            </a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">首頁</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">甜點</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">登入</a>
+                    </li>
+                </ul>
+                <!-- <div class="shopping_cart d-none d-md-block">
+                    <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
+                        alt="shopping cart"></a>
+                </div> -->
+            </div>
+            <div class="d-md-none">
+                <a href="#"><img
+                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
+                        alt="shopping cart"></a>
+            </div>
+        </div>
+        <div class="shopping_cart d-none d-md-block">
+            <a href="#"><img
+                    src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
+                    alt="shopping cart"></a>
+        </div>
+    </nav>
+
+    <div class="payment row g-0">
+        <div class="d-block d-md-flex col-md-10 mx-auto gap-4 justify-content-between">
+            <form class="checkout_left">
+                <div class="left_top bg-primary text-secondary">
+                    <div class="d-flex ">
+                        <p class="form_title">付款</p>
+                        <div></div>
+                    </div>
+                    <label for="creditcard">信用卡卡號</label>
+                    <div class="position-relative">
+                        <input type="text" name="" id="creditcard" placeholder="9012-3456-7890-1234" class="w-100">
+                        <span class="position-absolute"><img src="image/credit_card_20dp_3F5D45_FILL0_wght400_GRAD0_opsz20.png" alt=""></span>
+                    </div>
+                    <label for="name">持卡人姓名</label>
+                    <div class="d-flex gap-2 w-100">
+                            <input type="text" name="" id="name" placeholder="王" class="w-100">
+                            <input type="text" name="" id="firstname" placeholder="小明" class="w-100">
+                    </div>
+                    <label for="expiry">有效期限</label>
+                    <div class="d-flex gap-2 pb-2">
+                        <select class="form-select bg-secondary" aria-label="Default select example">
+                            <option selected>月</option>
+                            <option value="1">1月</option>
+                            <option value="2">2月</option>
+                            <option value="3">3月</option>
+                        </select>
+                        <select class="form-select bg-secondary" aria-label="Default select example">
+                            <option selected>年</option>
+                            <option value="1">2030</option>
+                            <option value="2">2031</option>
+                            <option value="3">2032</option>
+                        </select>
+                    </div>
+                    <label for="cvc" class="d-block">信用卡卡號</label>
+                    <input type="text" name="" id="cvc" placeholder="123" class="cvc">
+                </div>
+                <button type="submit" class="left_bottom d-block text-center text-primary w-100 border-0">下一步</button>
+            </form>
+    
+            <div class="d-none d-md-block checkout_right">
+                <div>
+                    <div class="order">
+                        <p class="text-center bg-secondary">訂單摘要</p>
+                        <div class="order_subject border border-secondary">
+                            <div class="subtotal d-flex justify-content-between">
+                                <p>小計</p>
+                                <p>NT$ 2,700</p>
+                            </div>
+                            <div class="delivery_fee d-flex justify-content-between">
+                                <p>運費</p>
+                                <p>NT$ 300</p>
+                            </div>
+                            <div class="total d-flex justify-content-between">
+                                <p>總計</p>
+                                <p>NT$ 3,000</p>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+    
+                <div>
+                    <div class="list">
+                        <p class="text-center bg-secondary">購物清單</p>
+                        <ul class="list_subject border border-secondary">
+                            <li class="d-flex justify-content-between">
+                                <div class="cart_product_img"><img src="https://bit.ly/2QvsT63" alt=""></div>
+                                <div class="d-flex flex-column justify-content-center text-primary">
+                                    <p class="name">焦糖馬卡龍（2）</p>
+                                    <p class="price">NT$ 900</p>
+                                </div>
+                            </li>
+                            <li class="d-flex my-3 justify-content-between">
+                                <div class="cart_product_img"><img src="https://bit.ly/2zBDAxX" alt=""></div>
+                                <div class="d-flex flex-column justify-content-center text-primary">
+                                    <p class="name">焦糖馬卡龍（2）</p>
+                                    <p class="price">NT$ 900</p>
+                                </div>
+                            </li>
+                            <li class="d-flex justify-content-between">
+                                 <div class="cart_product_img"><img src="https://bit.ly/2zKOP7w" alt=""></div>
+                                <div class="d-flex flex-column justify-content-center text-primary">
+                                    <p class="name">焦糖馬卡龍（2）</p>
+                                    <p class="price">NT$ 900</p>
+                                </div>
+                            </li>
+                        </ul>
+                
+                        
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+
+    <div class="row g-0 bg-primary">
+        <div class="col-md-10 email d-block d-md-flex  align-items-center mx-auto">
+            <div class="col-md-6 left d-flex align-items-center justify-content-center justify-content-md-start">
+                <div>
+                    <img src="image/logo-light.png" alt="">
+                </div>
+                <p class="text-secondary">訂閱你我的甜蜜郵件</p>
+            </div>
+            <form class="col-md-6 email_input d-flex position-relative">
+                <label for="email" class=" email_image position-absolute"><img
+                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true"
+                        alt=""></label>
+                <input class="form-control me-0 border-0 text-primary bg-secondary" type="email" id="email">
+                <button class="border-0 no-hover" type="submit"><img
+                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true"
+                        alt=""></button>
+            </form>
+        </div>
+    </div>
+    <footer class="row g-0 bg-secondary">
+        <div class="col-md-10 mx-auto">
+            <div class="d-flex justify-content-between ">
+                <div class="footer_left d-flex flex-column justify-content-between">
+                    <div class="footer_logo"><a href="#"><img src="image/logotype-lg-dark.png" alt=""></a></div>
+                    <p class="text-primary lh-base">07-1234-5678<br>sweetaste@email.com<br>800 高雄市新興區幸福路 520 號</p>
+                </div>
+                <div class="slogan d-none d-md-block">
+                    <a href="#"><img src="image/sm-今天是個吃甜點的好日子.png" alt=""></a>
+                </div>
+            </div>
+            <div class="d-block d-md-flex justify-content-between align-items-end">
+                <div class="d-flex">
+                    <div class="line_logo me-2"><a href="#"><img src="image/ic-line@.png" alt=""></a></div>
+                    <div><a href="#"><img src="image/ic-facebook.png" alt=""></a></div>
+                </div>
+                <p class="copy_right text-primary lh-1">&copy 2018 Sweetaste* All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
