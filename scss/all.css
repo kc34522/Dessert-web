@@ -13369,9 +13369,24 @@ footer .copy_right {
     margin-bottom: 60px;
   }
 }
+.section_one span {
+  top: 30px;
+  right: 30px;
+}
+@media (min-width: 768px) {
+  .section_one span {
+    top: 40px;
+    right: 40px;
+  }
+}
 
 .product_main {
-  gap: 20px;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .product_main {
+    padding: 0 42px;
+  }
 }
 .product_main .left_menu {
   margin-bottom: 30px;
@@ -13379,14 +13394,16 @@ footer .copy_right {
 }
 @media (min-width: 768px) {
   .product_main .left_menu {
-    width: 31%;
+    width: 32.5%;
   }
 }
-.product_main .left_menu a, .product_main .left_menu p {
+.product_main .left_menu a,
+.product_main .left_menu p {
   font-size: 24px;
   line-height: 30px;
 }
-.product_main .left_menu a:hover, .product_main .left_menu p:hover {
+.product_main .left_menu a:hover,
+.product_main .left_menu p:hover {
   background-color: #EAF0ED;
 }
 .product_main .product_list {
@@ -13396,7 +13413,7 @@ footer .copy_right {
 }
 @media (min-width: 768px) {
   .product_main .product_list {
-    width: 66%;
+    width: 63.5%;
     padding: 0;
   }
 }
@@ -13413,11 +13430,16 @@ footer .copy_right {
 @media (min-width: 768px) {
   .six_product li {
     margin-bottom: 0;
-    width: 48%;
+    width: 47%;
   }
 }
 .six_product li > div > div:first-of-type {
-  height: 315px;
+  aspect-ratio: 1/1;
+}
+@media (min-width: 768px) {
+  .six_product li > div > div:first-of-type {
+    aspect-ratio: 1/1.05;
+  }
 }
 .six_product .product_center .name {
   width: 58%;
@@ -13432,19 +13454,15 @@ footer .copy_right {
   padding: 12px 8px;
   left: 20px;
   line-height: 20px;
+  letter-spacing: 4px;
 }
 .six_product .like_button {
-  top: 20px;
-  right: 20px;
+  top: 19px;
+  right: 22px;
 }
-
-.product_main {
-  padding: 0;
-}
-@media (min-width: 768px) {
-  .product_main {
-    padding: 0 42px;
-  }
+.six_product .like_button img {
+  width: 24px;
+  height: 24px;
 }
 
 .page {
@@ -13471,6 +13489,10 @@ footer .copy_right {
   -o-object-position: center;
      object-position: center;
   height: 100%;
+}
+.page .page-link img {
+  width: 24px;
+  height: 24px;
 }
 .page .pagination {
   height: 60px;
