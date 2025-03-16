@@ -7,28 +7,30 @@
 
     }
     .left{
-        >div{
+        form>div{
             padding: 0;
             @media (min-width: 768px) {
                 padding: 40px 30px 25px 30px;
             }
         }
+
+        .top{
+            margin-bottom: 0;
+            padding: 30px 0;
+            @media (min-width: 768px) {
+                margin-bottom: 40px;
+                padding: 0;
+            }
+            font-size: 36px;
+            line-height: 50px;
+        }
        
     }
-    .top{
-        margin-bottom: 0;
-        padding: 30px 0;
-        @media (min-width: 768px) {
-            margin-bottom: 40px;
-            padding: 0;
-        }
-        font-size: 36px;
-        line-height: 50px;
-    }
+
 
     .three_logo{
         padding: 30px;
-        div{
+        a{
             height: 56px;
             padding: 14px;
         }
@@ -58,6 +60,18 @@
         @media (min-width: 768px) {
             margin: 0;
             padding-bottom: 0px;
+        }
+
+        //手機版打勾閃爍待處理
+
+        input[type="checkbox"]:checked::after {
+            content: "✓"; /* 加上勾勾 */
+            font-size: 16px;
+            color: #3F5D45; 
+            position: absolute;
+            top: 50%;
+            left: 8.5px;
+            transform: translate(-50%, -50%);
 
         }
     }
@@ -68,16 +82,20 @@
         font-size: 24px;
         line-height: 33px;
     }
-    .right{
-        height: 350px;
+
+    .login_right{
         padding: 40px 30px;
         p{
-            font-size: 24px;
+            font-size: 2.5vw;
             line-height: 36px;
             margin-bottom: 36px;
         }     
         div{
-            height: 56px;
+
+            a{
+                height: 56px;
+                width: 100%;
+            }
             .fb_logo{
                 width: 108px;
                 height: 21px;

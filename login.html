@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>會員登入｜Sweetaste</title>
     <link rel="stylesheet" href="scss/all.css">
 </head>
 
@@ -13,9 +13,9 @@
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar_icon navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <picture>
                     <source srcset="./image/logo-all-dark.png" media="(min-width:768px)" width="219">
                     <img src="./image/logotype-sm-dark.png" width="114">
@@ -24,75 +24,93 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">首頁</a>
+                        <a class="nav-link" aria-current="page" href="index.html">首頁</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">甜點</a>
+                        <a class="nav-link" href="product.html">甜點</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">登入</a>
+                        <a class="nav-link" href="login.html">登入</a>
                     </li>
                 </ul>
-                <!-- <div class="shopping_cart d-none d-md-block">
-                    <a href="#"><img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
-                        alt="shopping cart"></a>
-                </div> -->
+
             </div>
-            <div class="d-md-none">
-                <a href="#"><img
+            <div class="d-block d-md-none">
+                <a href="cart.html"><img
                         src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
                         alt="shopping cart"></a>
             </div>
+
         </div>
         <div class="shopping_cart d-none d-md-block">
-            <a href="#"><img
+            <a href="cart.html"><img
                     src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/shopping_cart.png?raw=true"
                     alt="shopping cart"></a>
         </div>
     </nav>
+
     <div class="login row g-0">
         <div class="d-block d-md-flex col-md-10 mx-auto align-items-center">
             <div class="left col-md-6">
-                <div class="bg-primary">
-                    <p class="top text-center text-secondary">會員登入</p>
-                    <!-- 手機版 -->
-                    <div class="three_logo d-flex d-md-none bg-secondary justify-content-center">
-                        <div class="bg-light d-flex align-items-center"><img class="fb_logo mx-auto"
-                                src="image/ic-facebook-logotype.png" alt=""></div>
-                        <div class="bg-light d-flex align-items-center border-start border-end border-secondary"><img class="google_logo mx-auto"
-                                src="image/ic-google.png" alt=""></div>
-                        <div class="bg-light  d-flex align-items-center"><img class="yahoo_logo mx-auto"
-                                src="image/ic-yahoo.png" alt=""></div>
-                    </div>
-                    <div class="center">
-                        <label for="account" class="account_image position-absolute"><img
-                                src="image/person_24dp_3F5D45.png" alt=""></label>
-                        <input class="form-control me-0 border-0 text-primary bg-secondary" placeholder="電子信箱/手機號碼"
-                            type="text" id="account">
-                        <label for="password" class="account_image position-absolute"><img
-                                src="image/vpn_key_16dp_3F5D45.png" alt=""></label>
-                        <input class="form-control me-0 border-0 text-primary bg-secondary" placeholder="請輸入使用者密碼"
-                            type="password" id="password">
-                    </div>
+                <form action="" >
+                    <div class="bg-primary">
+                        <label class="d-block top text-center text-secondary" for="account">會員登入</label>
 
+                        <!-- 手機版 -->
+                        <div class="three_logo d-flex d-md-none bg-secondary justify-content-center">
+                            <div class="col bg-light d-flex align-items-center">
+                                <a href="#" class="d-block mx-auto align-content-center"><img class="fb_logo mx-auto"
+                                        src="image/ic-facebook-logotype.png" alt=""></a>
+                            </div>
+                            <div
+                                class="col bg-light d-flex align-items-center border-start border-end border-secondary">
+                                <a href="#" class="d-block mx-auto align-content-center"><img
+                                        class="google_logo mx-auto" src="image/ic-google.png" alt=""></a>
+                            </div>
+                            <div class="col bg-light  d-flex align-items-center">
+                                <a href="#" class="d-block mx-auto align-content-center"><img class="yahoo_logo mx-auto"
+                                        src="image/ic-yahoo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="center">
+                            <label for="account" class="account_image position-absolute"><img
+                                    src="image/person_24dp_3F5D45.png" alt=""></label>
+                            <input class="form-control me-0 border-0 text-primary bg-secondary" placeholder="電子信箱/手機號碼"
+                                type="text" id="account">
+                            <label for="password" class="account_image position-absolute"><img
+                                    src="image/vpn_key_16dp_3F5D45.png" alt=""></label>
+                            <input class="form-control me-0 border-0 text-primary bg-secondary" placeholder="請輸入使用者密碼"
+                                type="password" id="password">
+                        </div>
 
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                        <label class="form-check-label text-secondary" for="flexCheckDefault">記住我
-                        </label>
+                        <!-- 手機版打勾閃爍待處理 -->
+
+                        <div class="form-check d-flex align-items-center position-relative">
+                            <input class="form-check-input me-2 mb-1 bg-secondary" type="checkbox" value=""
+                                id="flexCheckDefault">
+                            <label class="form-check-label text-secondary" for="flexCheckDefault">記住我
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <p class="bottom text-center text-primary">登入帳號</p>
+                    <button type="submit" class="bottom d-block text-center text-primary w-100 border-0">登入帳號</button>
+                </form>
 
             </div>
-            <div class="d-none d-md-block right col-md-6 bg-secondary">
+            <div class="d-none d-md-block login_right col-md-6 bg-secondary">
                 <p class="text-center">—— 連結社群帳號 ——</p>
-                <div class="bg-light d-flex align-items-center"><img class="fb_logo mx-auto"
-                        src="image/ic-facebook-logotype.png" alt=""></div>
-                <div class="bg-light my-3  d-flex align-items-center"><img class="google_logo mx-auto"
-                        src="image/ic-google.png" alt=""></div>
-                <div class="bg-light  d-flex align-items-center"><img class="yahoo_logo mx-auto"
-                        src="image/ic-yahoo.png" alt=""></div>
+                <div class="bg-light d-flex align-items-center">
+                    <a href="#" class="d-block mx-auto align-content-center"><img class="fb_logo mx-auto"
+                            src="image/ic-facebook-logotype.png" alt=""></a>
+                </div>
+
+                <div class="bg-light my-3  d-flex align-items-center">
+                    <a href="#" class="d-block mx-auto align-content-center"><img class="google_logo mx-auto"
+                            src="image/ic-google.png" alt=""></a>
+                </div>
+                <div class="bg-light  d-flex align-items-center">
+                    <a href="#" class="d-block mx-auto align-content-center"><img class="yahoo_logo mx-auto"
+                            src="image/ic-yahoo.png" alt=""></a>
+                </div>
             </div>
 
         </div>
@@ -106,31 +124,33 @@
     <div class="row g-0 bg-primary">
         <div class="col-md-10 email d-block d-md-flex  align-items-center mx-auto">
             <div class="col-md-6 left d-flex align-items-center justify-content-center justify-content-md-start">
-                <div>
+                <label for="email">
                     <img src="image/logo-light.png" alt="">
-                </div>
-                <p class="text-secondary">訂閱你我的甜蜜郵件</p>
+                </label>
+                <label class="text-secondary fs-4" for="email">訂閱你我的甜蜜郵件</label>
             </div>
             <form class="col-md-6 email_input d-flex position-relative">
                 <label for="email" class=" email_image position-absolute"><img
                         src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/mail-24px.png?raw=true"
                         alt=""></label>
-                <input class="form-control me-0 border-0 text-primary bg-secondary" type="email" id="email">
+                <input class="form-control me-0 border-0 text-primary bg-secondary " type="email" id="email">
                 <button class="border-0 no-hover" type="submit"><img
                         src="https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/arrow_forward-24px.png?raw=true"
                         alt=""></button>
             </form>
         </div>
     </div>
+
     <footer class="row g-0 bg-secondary">
         <div class="col-md-10 mx-auto">
             <div class="d-flex justify-content-between ">
-                <div class="footer_left d-flex flex-column justify-content-between">
-                    <div class="footer_logo"><a href="#"><img src="image/logotype-lg-dark.png" alt=""></a></div>
+                <div class="footer_left">
+                    <div class="footer_logo"><a class="d-block" href="index.html"><img src="image/logotype-lg-dark.png"
+                                alt=""></a></div>
                     <p class="text-primary lh-base">07-1234-5678<br>sweetaste@email.com<br>800 高雄市新興區幸福路 520 號</p>
                 </div>
                 <div class="slogan d-none d-md-block">
-                    <a href="#"><img src="image/sm-今天是個吃甜點的好日子.png" alt=""></a>
+                    <a href="index.html"><img src="image/sm-今天是個吃甜點的好日子.png" alt=""></a>
                 </div>
             </div>
             <div class="d-block d-md-flex justify-content-between align-items-end">
@@ -142,6 +162,7 @@
             </div>
         </div>
     </footer>
+
 
 
 
