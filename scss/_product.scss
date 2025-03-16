@@ -18,6 +18,7 @@
 
 
 .product_main {
+    
     padding: 0;
     @media (min-width: 768px) {
         padding: 0 42px;
@@ -26,6 +27,7 @@
     .left_menu {
         margin-bottom: 30px;
         width: 100%;
+        font-weight: 600;
 
         @media (min-width: 768px) {
             width: 32.5%;
@@ -95,6 +97,7 @@
         .price {
             width: 42%;
             padding: 14px 0;
+            font-weight: 600;
         }
     }
 
@@ -104,6 +107,7 @@
         left: 20px;
         line-height: 20px;
         letter-spacing: 4px;
+        font-weight: 600;
     }
 
     .like_button {
@@ -136,6 +140,9 @@
         a:hover {
             background: #3F5D45;
             color: #EAF0ED;
+            font-weight: 600;
+
+
         }
     }
 

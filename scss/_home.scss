@@ -12,6 +12,9 @@ p {
 
 body {
     padding-top: 30px;
+    font-family: "PingFang TC", "Microsoft JhengHei", "Arial", sans-serif;
+    font-weight: 300;
+
 }
 
 .navbar {
@@ -31,6 +34,7 @@ body {
 
     .nav-link {
         line-height: 22px;
+        font-weight: 600;
     }
 
     .navbar-collapse {
@@ -109,18 +113,24 @@ body {
 
             p {
                 z-index: 3;
-                letter-spacing: 4px;
+                letter-spacing: 2px;
+                @media (min-width: 768px) {
+                    letter-spacing: 4px;
+
+                }
+                
             }
 
             &:hover {
                 color: #3F5D45;
+                font-weight: 600;
             }
         }
 
         a::after {
             position: absolute;
             background-color: #3F5D45;
-          
+
 
             opacity: 0.8;
             top: 0;
@@ -133,7 +143,7 @@ body {
 
         a:hover::after {
             background-color: #FFE180;
-       
+
         }
 
         a::before {
@@ -167,11 +177,13 @@ body {
     gap: 30px;
 
     padding: 0;
+
     @media (min-width: 768px) {
         padding: 0 42px;
     }
 
     margin-top: 0;
+
     @media (min-width: 768px) {
         margin-top: 60px;
     }
@@ -209,7 +221,7 @@ body {
 
     }
 
-  
+
 
     .slogan {
         margin: 30px 0;
@@ -251,6 +263,7 @@ body {
 .slogan4 {
     margin: 30px 0;
     max-width: 196px;
+
     @media (min-width: 768px) {
         width: 89px;
         margin: 80px 0;
@@ -273,7 +286,11 @@ body {
         }
 
         li>div>div:first-of-type {
-            height: 315px;
+            aspect-ratio: 1 / 1;
+            @media (min-width: 768px) {
+                aspect-ratio: 1 / 1.05;
+    
+            }
         }
 
         .product_center {
@@ -286,6 +303,7 @@ body {
             .price {
                 width: 42%;
                 padding: 14px 0;
+                font-weight: 600;
             }
         }
 
@@ -293,7 +311,8 @@ body {
             writing-mode: vertical-rl;
             padding: 12px 8px;
             left: 20px;
-            letter-spacing: 3px
+            letter-spacing: 3px;
+            font-weight: 600;
         }
 
         .like_button {
@@ -305,6 +324,8 @@ body {
 }
 
 .email {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
     padding: 30px 30px 0 30px;
 
     @media (min-width: 768px) {
@@ -345,6 +366,7 @@ footer {
     .footer_left {
         margin-bottom: 37px;
         width: 100%;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
         @media (min-width: 768px) {
             margin-bottom: 30px;
@@ -366,5 +388,6 @@ footer {
 
     .copy_right {
         margin-top: 23px;
+        font-family: "Times New Roman", Times, serif;
     }
 }

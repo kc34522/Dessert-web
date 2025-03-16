@@ -13026,6 +13026,8 @@ p {
 
 body {
   padding-top: 30px;
+  font-family: "PingFang TC", "Microsoft JhengHei", "Arial", sans-serif;
+  font-weight: 300;
 }
 
 .navbar {
@@ -13046,6 +13048,7 @@ body {
 }
 .navbar .nav-link {
   line-height: 22px;
+  font-weight: 600;
 }
 .navbar .navbar-collapse {
   flex-grow: 0;
@@ -13119,10 +13122,16 @@ body {
 }
 .section_one .three_subject a p {
   z-index: 3;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  .section_one .three_subject a p {
+    letter-spacing: 4px;
+  }
 }
 .section_one .three_subject a:hover {
   color: #3F5D45;
+  font-weight: 600;
 }
 .section_one .three_subject a::after {
   position: absolute;
@@ -13280,7 +13289,12 @@ body {
   }
 }
 .section_products .three_product li > div > div:first-of-type {
-  height: 315px;
+  aspect-ratio: 1/1;
+}
+@media (min-width: 768px) {
+  .section_products .three_product li > div > div:first-of-type {
+    aspect-ratio: 1/1.05;
+  }
 }
 .section_products .three_product .product_center .name {
   width: 58%;
@@ -13289,12 +13303,14 @@ body {
 .section_products .three_product .product_center .price {
   width: 42%;
   padding: 14px 0;
+  font-weight: 600;
 }
 .section_products .three_product span {
   writing-mode: vertical-rl;
   padding: 12px 8px;
   left: 20px;
   letter-spacing: 3px;
+  font-weight: 600;
 }
 .section_products .three_product .like_button {
   top: 20px;
@@ -13302,6 +13318,7 @@ body {
 }
 
 .email {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 30px 30px 0 30px;
 }
 @media (min-width: 768px) {
@@ -13339,6 +13356,7 @@ footer {
 footer .footer_left {
   margin-bottom: 37px;
   width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 768px) {
   footer .footer_left {
@@ -13359,6 +13377,7 @@ footer .footer_logo img {
 }
 footer .copy_right {
   margin-top: 23px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .section_one {
@@ -13391,6 +13410,7 @@ footer .copy_right {
 .product_main .left_menu {
   margin-bottom: 30px;
   width: 100%;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .product_main .left_menu {
@@ -13448,6 +13468,7 @@ footer .copy_right {
 .six_product .product_center .price {
   width: 42%;
   padding: 14px 0;
+  font-weight: 600;
 }
 .six_product span {
   writing-mode: vertical-rl;
@@ -13455,6 +13476,7 @@ footer .copy_right {
   left: 20px;
   line-height: 20px;
   letter-spacing: 4px;
+  font-weight: 600;
 }
 .six_product .like_button {
   top: 19px;
@@ -13484,6 +13506,7 @@ footer .copy_right {
 .page .page-item a:hover {
   background: #3F5D45;
   color: #EAF0ED;
+  font-weight: 600;
 }
 .page .page-link {
   -o-object-position: center;
@@ -13704,8 +13727,10 @@ footer .copy_right {
 .cart li .cart_product_price {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
 }
 .cart li .total_price {
+  font-weight: 600;
   font-size: 20px;
   line-height: 28px;
   border-top: 1px solid #EAF0ED;
@@ -13840,12 +13865,14 @@ footer .copy_right {
   line-height: 28px;
   margin-bottom: 8px;
   margin-top: 16px;
+  font-weight: 600;
 }
 .checkout .left_top .delivery {
   font-size: 36px;
   line-height: 50px;
   margin-bottom: 14px;
   margin-top: 0;
+  font-weight: 600;
 }
 .checkout .left_top .inside_circle {
   width: 12px;
@@ -13966,6 +13993,7 @@ footer .copy_right {
 .checkout .checkout_right .list_subject .price {
   font-size: 20px;
   line-height: 28px;
+  font-weight: 600;
 }
 
 .payment {
@@ -13992,12 +14020,14 @@ footer .copy_right {
   line-height: 28px;
   margin-bottom: 8px;
   margin-top: 16px;
+  font-weight: 600;
 }
 .payment .left_top .form_title {
   font-size: 36px;
   line-height: 50px;
   margin-bottom: 14px;
   margin-top: 0;
+  font-weight: 600;
 }
 .payment .left_top .check_img {
   width: 16px;
@@ -14148,6 +14178,7 @@ footer .copy_right {
 .payment .checkout_right .list_subject .price {
   font-size: 20px;
   line-height: 28px;
+  font-weight: 600;
 }
 
 .receipt {
@@ -14174,12 +14205,14 @@ footer .copy_right {
   line-height: 28px;
   margin-bottom: 8px;
   margin-top: 16px;
+  font-weight: 600;
 }
 .receipt .left_top .form_title {
   font-size: 36px;
   line-height: 50px;
   margin-bottom: 14px;
   margin-top: 0;
+  font-weight: 600;
 }
 .receipt .left_top .check_img_first {
   width: 16px;
@@ -14266,6 +14299,7 @@ footer .copy_right {
   }
 }
 .receipt .left_top .choose {
+  font-weight: 600;
   margin-bottom: 14px;
   margin-top: 16px;
 }
@@ -14351,6 +14385,7 @@ footer .copy_right {
 .receipt .checkout_right .list_subject .price {
   font-size: 20px;
   line-height: 28px;
+  font-weight: 600;
 }
 
 label[for=same_address] {
@@ -14422,6 +14457,7 @@ label[for=address] {
   font-size: 24px;
   line-height: 33px;
   height: 65px;
+  font-weight: 600;
 }
 @media (min-width: 768px) {
   .keep_shopping {
