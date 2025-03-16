@@ -23,7 +23,7 @@
   --#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-light-toggler-icon-bg)};
   --#{$prefix}navbar-toggler-border-color: #{$navbar-light-toggler-border-color};
   --#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
-  --#{$prefix}navbar-toggler-focus-width: #{$navbar-toggler-focus-width};
+  --#{$prefix}navbar-toggler-focus-width: #0;
   --#{$prefix}navbar-toggler-transition: #{$navbar-toggler-transition};
   // scss-docs-end navbar-css-vars
 
@@ -86,7 +86,7 @@
 .navbar-nav {
   // scss-docs-start navbar-nav-css-vars
   --#{$prefix}nav-link-padding-x: 0;
-  --#{$prefix}nav-link-padding-y: 0;
+  --#{$prefix}nav-link-padding-y: 16px;
   @include rfs($nav-link-font-size, --#{$prefix}nav-link-font-size);
   --#{$prefix}nav-link-font-weight: #{$nav-link-font-weight};
   --#{$prefix}nav-link-color: var(--#{$prefix}navbar-color);

@@ -3891,7 +3891,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28141, 162, 145, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
-  --bs-navbar-toggler-focus-width: 0.25rem;
+  --bs-navbar-toggler-focus-width: #0;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
   position: relative;
   display: flex;
@@ -3926,7 +3926,7 @@ textarea.form-control-lg {
 
 .navbar-nav {
   --bs-nav-link-padding-x: 0;
-  --bs-nav-link-padding-y: 0;
+  --bs-nav-link-padding-y: 16px;
   --bs-nav-link-font-weight: ;
   --bs-nav-link-color: var(--bs-navbar-color);
   --bs-nav-link-hover-color: #8DA291;
@@ -13020,6 +13020,10 @@ img {
      object-position: center;
 }
 
+p {
+  overflow-wrap: anywhere;
+}
+
 body {
   padding-top: 30px;
 }
@@ -13032,16 +13036,13 @@ body {
     padding: 0 42px;
   }
 }
-.navbar > div:first-of-type {
-  padding: 0;
-  height: 40px;
-}
-.navbar .navbar-brand {
-  margin-right: 0;
-  padding: 0;
-}
 .navbar .navbar-nav {
-  gap: 60px;
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+    gap: 60px;
+  }
 }
 .navbar .nav-link {
   line-height: 22px;
@@ -13050,9 +13051,6 @@ body {
   flex-grow: 0;
 }
 .navbar .navbar-toggler {
-  width: 24px;
-  height: 24px;
-  padding: 0;
   font-size: 0;
   border: none;
 }
@@ -13062,6 +13060,9 @@ body {
 }
 .navbar .shopping_cart {
   margin-left: 79px;
+}
+.navbar .navbar-toggler-icon {
+  background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/dehaze-24px.png?raw=true);
 }
 
 .section_one {
@@ -13105,13 +13106,9 @@ body {
   overflow: hidden;
 }
 .section_one .three_subject a {
-  position: relative;
   writing-mode: vertical-rl;
-  align-content: center;
   font-size: 20px;
   line-height: 24px;
-  height: 100%;
-  text-align: center;
   color: #FFFFFF;
 }
 @media (min-width: 768px) {
@@ -13122,6 +13119,7 @@ body {
 }
 .section_one .three_subject a p {
   z-index: 3;
+  letter-spacing: 4px;
 }
 .section_one .three_subject a:hover {
   color: #3F5D45;
@@ -13164,11 +13162,15 @@ body {
 .section_two,
 .section_three {
   position: relative;
-  /* 讓偽元素能夠相對於 section_two 定位 */
   gap: 30px;
-  margin-top: 0;
-  background: #FFFFFF;
   padding: 0;
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .section_two,
+  .section_three {
+    padding: 0 42px;
+  }
 }
 @media (min-width: 768px) {
   .section_two,
@@ -13210,12 +13212,6 @@ body {
     /* 確保背景顯示在底層 */
   }
 }
-@media (min-width: 768px) {
-  .section_two,
-  .section_three {
-    padding: 0 42px;
-  }
-}
 .section_two .slogan,
 .section_three .slogan {
   margin: 30px 0;
@@ -13229,11 +13225,6 @@ body {
     z-index: 5;
   }
 }
-.section_two .slogan img,
-.section_three .slogan img {
-  -o-object-position: center;
-     object-position: center;
-}
 .section_two .picture,
 .section_three .picture {
   height: 250px;
@@ -13246,11 +13237,6 @@ body {
     z-index: 5;
   }
 }
-.section_two .picture img,
-.section_three .picture img {
-  -o-object-position: center;
-     object-position: center;
-}
 .section_two p,
 .section_three p {
   line-height: 32px;
@@ -13261,7 +13247,6 @@ body {
   .section_two p,
   .section_three p {
     writing-mode: vertical-rl;
-    line-height: 28px;
     height: 280px;
     padding: 0;
     margin: 70px 0;
@@ -13309,7 +13294,7 @@ body {
   writing-mode: vertical-rl;
   padding: 12px 8px;
   left: 20px;
-  line-height: 20px;
+  letter-spacing: 3px;
 }
 .section_products .three_product .like_button {
   top: 20px;
@@ -13326,9 +13311,6 @@ body {
 }
 .email .left {
   gap: 20px;
-}
-.email .left p {
-  font-size: 24px;
 }
 .email .email_input {
   height: 56px;
@@ -13355,18 +13337,25 @@ footer {
   }
 }
 footer .footer_left {
-  height: 134px;
   margin-bottom: 37px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   footer .footer_left {
-    height: 210px;
     margin-bottom: 30px;
   }
 }
 footer .footer_logo {
-  width: 171px;
-  margin-top: 8.9px;
+  max-width: 171px;
+  margin-bottom: 39.5px;
+}
+@media (min-width: 768px) {
+  footer .footer_logo {
+    margin-bottom: 115.5px;
+  }
+}
+footer .footer_logo img {
+  max-width: 100%;
 }
 footer .copy_right {
   margin-top: 23px;
