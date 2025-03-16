@@ -11,20 +11,38 @@
     @media (min-width: 768px) {
         margin: 30px 42px 60px 42px;
         padding-top: 130px;
-
-
-
-
     }
 
     .success_image{
-        width: 189px;
+        max-width: 189px;
         margin-top: 32px;
-     
     }
 
-  
+    .circle {
+        width: 16px;
+        height: 16px;
+        margin-right: -3px;
 
+
+        @media (min-width: 768px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .line {
+        margin-right: -4px;
+        background: #8DA291;
+        width: 75px;
+        height: 2px;
+        @media (min-width: 768px) {
+            width: 55px;
+        }
+        @media (min-width: 920px) {
+            width: 66px;
+        }
+
+    }
 }
 
 

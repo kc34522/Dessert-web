@@ -14385,8 +14385,35 @@ label[for=address] {
   }
 }
 .checkout_success .success_image {
-  width: 189px;
+  max-width: 189px;
   margin-top: 32px;
+}
+.checkout_success .circle {
+  width: 16px;
+  height: 16px;
+  margin-right: -3px;
+}
+@media (min-width: 768px) {
+  .checkout_success .circle {
+    width: 20px;
+    height: 20px;
+  }
+}
+.checkout_success .line {
+  margin-right: -4px;
+  background: #8DA291;
+  width: 75px;
+  height: 2px;
+}
+@media (min-width: 768px) {
+  .checkout_success .line {
+    width: 55px;
+  }
+}
+@media (min-width: 920px) {
+  .checkout_success .line {
+    width: 66px;
+  }
 }
 
 .keep_shopping {
